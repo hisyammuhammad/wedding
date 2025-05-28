@@ -51,7 +51,6 @@
               <div class="navbar-nav ms-auto">
                 <a class="nav-link" href="#home">Home</a>
                 <a class="nav-link" href="#Info">Info</a>
-                <a class="nav-link" href="#story">Story</a>
                 <a class="nav-link" href="#gallery">Gallery</a>
                 <a class="nav-link" href="#rsvp">RSVP</a>
                 <a class="nav-link" href="#gift">Gift</a>
@@ -106,14 +105,115 @@
       </div>
     </section>
 
+    <section id="info" class="info">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-10 text-center">
+            <h2>Informasi Acara</h2>
+            <p class="alamat">Alamat: Masjid Raya Fatimah, Jayengan, Kec. Serengan, Kota Surakarta, Jawa Tengah 57152</p>
+            <a href="https://maps.app.goo.gl/xucpUxqACJDkXxTy7" target="_blank" class="btn btn-light btn-sm my-4">Klik untuk membuka</a>
+            <p class="description">dress code : HITAM </p>
+          </div>
+        </div>
+        <div class="row justify-content-center mt-4">
+          <div class="col-md-5 col-10">
+            <div class="card text-center text-bg-light  mb-5">
+          <div class="card-header">
+              akad nikah 
+           </div>
+             <div class="card-body">
+              <div class="row justify-content-center">
+                <div class="col-md-6">
+                  <i class="bi bi-clock d-block"></i>
+                  <span>05.00 - 07.00</span>
+                </div>
+                 <div class="col-md-6">
+                  <i class="bi bi-calendar2-month d-block"></i>
+                  <span>Minggu, 24 Agustus 2025</span>
+                </div>
+              </div>
+              </div>
+          <div class="card-footer ">
+          saat acara akad diharapkan kondusif menjaga kwkhidmatan dan kekhusyuan sekuruh prosesi.
+        </div>
+        </div>
+          </div> 
+          <div class="col-md-5 col-10">
+            <div class="card text-center text-bg-light">
+          <div class="card-header">
+              resepsi
+           </div>
+             <div class="card-body">
+              <div class="row justify-content-center">
+                <div class="col-md-6">
+                  <i class="bi bi-clock d-block"></i>
+                  <span>08.00 - selesai</span>
+                </div>
+                 <div class="col-md-6">
+                  <i class="bi bi-calendar2-month d-block"></i>
+                  <span>Minggu, 24 Agustus 2025</span>
+                </div>
+              </div>
+              </div>
+          <div class="card-footer ">
+          saat acara akad diharapkan kondusif menjaga kwkhidmatan dan kekhusyuan sekuruh prosesi.
+        </div>
+        </div>
+          </div> 
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery" class="gallery">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-10 text-center">
+            <span>memori foto kami</span>
+            <h2>Galeri Foto</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia quas reiciendis quos ullam, sed veritatis. Vel asperiores mollitia quas laudantium corporis. Exercitationem enim soluta error corporis aliquam, minus ea quisquam!</p>
+          </div>
+
+          <div class="row row-cols-lg-4 row-cols-md-3 row-cols-sm-2 row-cols-1 justify-content-center">
+            <div class="col mt-3">
+              <a href="img/gallery/1.jpg" data-toggle="lightbox" data-caption="This describes the image" data-gallery="album">
+                <img src="img/thumbnail/1.jpg" alt="Husna & Hendra" class="img-fluid w-100 rounded">
+              </a>
+            </div>
+            <div class="col mt-3">
+              <a href="img/gallery/2.jpg " data-toggle="lightbox" data-caption="This describes the image" data-gallery="album">
+                <img src="img/thumbnail/2.jpg" alt="Husna & Hendra" class="img-fluid w-100 rounded">
+              </a>
+            </div>
+            <div class="col mt-3">
+              <a href="img/gallery/3.jpg" data-toggle="lightbox" data-caption="This describes the image" data-gallery="album">
+                <img src="img/thumbnail/3.jpg" alt="Husna & Hendra" class="img-fluid w-100 rounded">
+              </a>
+            </div>
+            <div class="col mt-3">
+              <a href="img/gallery/4.jpg" data-toggle="lightbox" data-caption="This describes the image" data-gallery="album">
+                <img src="img/thumbnail/4.jpg" alt="Husna & Hendra" class="img-fluid w-100 rounded">
+              </a>
+            </div>
+            <div class="col mt-3">
+              <a href="img/gallery/1.jpg" data-toggle="lightbox" data-caption="This describes the image" data-gallery="album">
+                <img src="img/thumbnail/1.jpg" alt="Husna & Hendra" class="img-fluid w-100 rounded">
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
     
+    <script src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.5/dist/index.bundle.min.js"></script>
+
     <script>
       simplyCountdown('.simply-countdown', {
         year: 2025,
-        month: 6,
-        day: 27,
+        month: 8,
+        day: 24,
         words: {
           days: { singular: 'hari', plural: 'hari'},
           hours: {singular:'jam', plural:'jam'},
@@ -123,6 +223,20 @@
 
       })
     </script>
+
+  <script>
+    const stickyTop = document.querySelector('.sticky-top');
+    const offcanvas = document.querySelector('.offcanvas');
+
+    offcanvas.addEventListener('show.bs.offcanvas', function(){
+      stickyTop.style.overflow = 'visible';
+    })
+
+    offcanvas.addEventListener('hidden.bs.offcanvas', function(){
+      stickyTop.style.overflow = 'hidden';
+    })
+  </script>
+
 
   </body>
 </html>
