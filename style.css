@@ -350,4 +350,19 @@ html{
     padding: 40px;
     margin: 3px;
   }
+  
+  
 }
+  /* Saat lebar layar di bawah 576px */
+  @media (max-width: 576px) {
+    #submit-container {
+      display: flex;
+      justify-content: center;
+    }
+
+     #submit-button {
+      font-size: 1.3rem;     /* Lebih besar dari default */
+      
+    }
+  }
+
