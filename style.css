@@ -145,7 +145,8 @@ body {
   padding-bottom: 8rem;
 }
 
-.info h2{
+.info h2,
+.gifts h2{
   color: var(--pink);
   font-family: 'sacramento';
   font-size: 5rem;
@@ -179,13 +180,15 @@ body {
 }
 
 .gallery,
-.rsvp
+.rsvp,
+.gifts
 {
   padding-top: 10rem;
   padding-bottom: 8rem;
 }
 
-.gallery span{
+.gallery span,
+.gifts span{
   text-transform: uppercase;
   color: #666;
   font-size: 0.9rem;
@@ -195,7 +198,8 @@ body {
 }
 
 .gallery p,
-.rsvp p{
+.rsvp p,
+.gifts p{
   font-size: 1rem;
   font-weight: 300;
 }
