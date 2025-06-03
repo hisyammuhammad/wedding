@@ -69,15 +69,15 @@
           <div class="col-md-8 text-center">
             <h2>Acara Pernikahan</h2>
             <h3>Diselenggarakan pada 24 Juli 2025 di Solo, jawa tengah</h3>
-            <h4>oelh karena itu, dengan segala hormat, kami bermaksud untuk mengundang Bapak/Ibu, Saudara/i, untuk hadir dalam acara pernikahan kami</h4>
+            <h4>oleh karena itu, dengan segala hormat, kami bermaksud untuk mengundang Bapak/Ibu, Saudara/i, untuk hadir dalam acara pernikahan kami</h4>
           </div>
         </div>
         <div class="row couple">
           <div class="col-lg-6">
             <div class="row">
               <div class="col-8 text-end">
-                  <h3>Husna Afifah</h3>
-                  <p>Dokter gigi </p>
+                  <h3>Drg Husna Afifah</h3>
+                  <p>Husna Afifah adalah seorang Dokter Gigi lulusan Universitas Jember yang lahir di Pati pada 17 Februari 1997. Saat ini, ia menjalani praktik di Tria Klinik dan Apic Dentistry, serta mengajar sebagai instruktur laboratorium di Fakultas Kedokteran Gigi Universitas Muhammadiyah Surakarta. Selain aktif di dunia medis, ia juga terlibat dalam bisnis keluarga sebagai desainer dan marketing UKM Bandeng Patera. Husna memiliki minat dalam mencoba hal baru, senang menghabiskan waktu bersama keluarga, serta aktif dalam kegiatan keislaman dan organisasi semasa kuliah.</p>
                   <p>Putra Bapak. Achmad Nurul Huda <br> dan <br> Ibu Anik Ristiyani Amiroh</p>
               </div>
               <div class="col-4">
@@ -94,9 +94,9 @@
                 <img src="img/men.png" alt="Suhendra" class="img-responsive rounded-circle">
               </div>
               <div class="col-8 ">
-                  <h3>Suhendra </h3>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, illo. Esse rerum sequi, a fugit ad dolores, non id consequatur veritatis deserunt, quibusdam </p>
-                  <p>Putra Bapak. Wondo <br> dan <br> Ibu Sri</p>
+                  <h3>Kurniawan Suhendra, S.H., M.H.</h3>
+                  <p>Kurniawan Suhendra, S.H., M.H. adalah seorang Asisten Notaris PPAT yang lahir di Sukoharjo pada 17 Juni 1998. Lulusan Magister Kenotariatan Universitas Sebelas Maret Surakarta ini aktif dalam kegiatan keislaman, memiliki minat dalam musik, serta rutin mengisi waktu luang dengan mengaji dan mengikuti kajian. Saat ini berdomisili di Desa Nguter, Kabupaten Sukoharjo, dan memiliki pengalaman kerja sejak tahun 2018 di kantor Notaris PPAT Sarwondo, S.H., Sp.N.</p>
+                  <p>Putra Bapak Sarwondo, S.H., Sp.N <br> dan <br> Ibu Dra.Sri Wahyuni, M.Si</p>
               </div>
             </div>
           </div>
@@ -267,7 +267,7 @@
               </select>
               </div>
               </div>
-               <div class="col-12 " style="margin-top: 30px" id="submit-container">
+               <div class="col-12 " style="margin-top: 35.5px" id="submit-container">
                 <button class="btn btn-primary" id="submit-button">Kirim</button>
                </div>
             </form>
@@ -326,7 +326,7 @@
 
     <div id="audio-container">
       <audio id="song" autoplay loop>
-        <source src="audio/nadhif basalamah - penjaga hati (Official Lyric Video).mp3" type="audio/mp3">
+        <source src="audio/The Bakuucakar & Lalahuta - Kisah Romantis (The Vault of Glenn Fredly) _ Official Lyric Video.mp3" type="audio/mp3">
       </audio>
 
 
@@ -437,6 +437,15 @@
     });
   });
     </script>
+    <script>
+    const urlParams = new URLSearchParams(window.location.search);
+    const nama = urlParams.get('n') || '';
+    const pronoun = urlParams.get('p') || 'Bapak/Ibu/Saudara/i';
+    const namaContainer = document.querySelector('.hero h4 span');
+    namaContainer.innerText = `${pronoun} ${nama},`.replace(/ ,$/, ',');
+
+    document.querySelector('#nama').value = nama;
+  </script>
 
 
 
