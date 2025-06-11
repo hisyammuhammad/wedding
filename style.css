@@ -219,6 +219,13 @@ body {
   margin-bottom: 1rem;
 }
 
+.gifts h3{
+  color: var(--pink);
+  font-family: '';
+  font-size: 2rem;
+  font-weight: bold;
+}
+
 .gallery p,
 .rsvp p,
 .gifts p{
