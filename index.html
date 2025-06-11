@@ -12,6 +12,8 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap" rel="stylesheet">
 
+    <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Pinyon+Script&display=swap" rel="stylesheet">
+
     <link href="https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap" rel="stylesheet">
       <!-- simplyCountdown  -->
       <link rel="stylesheet" href="countdown/simplyCountdown.theme.default.css"/>
@@ -70,8 +72,8 @@
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-md-8 text-center">
-            <h2>Acara Pernikahan</h2>
-            <h4>oleh karena itu, dengan segala hormat, kami bermaksud untuk mengundang Bapak/Ibu, Saudara/i, untuk hadir dalam acara pernikahan kami</h4>
+            <h2></h2>
+            <h4>THE WEDDING OF Dengan segala hormat, kami mengundang <span>Bapak/Ibu/Saudara/i,</span> untuk menghadiri acara pernikahan kami :</h4>
           </div>
         </div>
         <div class="row couple">
@@ -80,7 +82,7 @@
               <div class="col-8 text-end">
                   <h3>drg Husna Afifah</h3>
                  
-                  <p>Putra Bapak H. Achmad Nurul Huda, Ak. M.M., CA <br> dan <br> Ibu Anik Ristiyani Amiroh, A.Md.Farm.</p>
+                  <p>Putri Bapak H. Achmad Nurul Huda, Ak. M.M., CA <br> dan <br> Ibu Anik Ristiyani Amiroh, A.Md.Farm.</p>
               </div>
               <div class="col-4">
                 <img src="img/hijab.png" alt="Husna Afifah" class="img-responsive rounded-circle ">
@@ -98,7 +100,7 @@
               <div class="col-8 ">
                   <h3>Kurniawan Suhendra, S.H., M.H.</h3>
                   
-                  <p>Putra Bapak h.TM. Sarwondo, S.H., Sp.N <br> dan <br> Ibu Dra.Sri Wahyuni, M.Si</p>
+                  <p>Putra Bapak H.TM. Sarwondo, S.H., Sp.N <br> dan <br> Ibu Dra.Sri Wahyuni, M.Si</p>
               </div>
             </div>
           </div>
@@ -213,8 +215,8 @@
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-md-8 col-10 text-center">
-          <span>Dengan segala hormat </span>
-          <h2>Kami tidak menerima sumbangan</h2>
+          <span>Dengan segala hormat dan kerendahan hati </span>
+          <h2>mohon maaf tidak menerima sumbangan</h2>
           <p>
           </p>
            
@@ -428,16 +430,40 @@
      })
     });
   });
-    </script>
-    <script>
-    const urlParams = new URLSearchParams(window.location.search);
-    const nama = urlParams.get('n') || '';
-    const pronoun = urlParams.get('p') || 'Bapak/Ibu/Saudara/i';
-    const namaContainer = document.querySelector('.hero h4 span');
-    namaContainer.innerText = `${pronoun} ${nama},`.replace(/ ,$/, ',');
+  //   </script>
+  //   <script>
+  //   const urlParams = new URLSearchParams(window.location.search);
+  //   const nama = urlParams.get('n') || '';
+  //   const pronoun = urlParams.get('p') || 'Bapak/Ibu/Saudara/i';
+  //   const namaContainer = document.querySelector('.hero h4 span');
+  //   namaContainer.innerText = `${pronoun} ${nama},`.replace(/ ,$/, ',');
 
-    document.querySelector('#nama').value = nama;
-  </script>
+  //   document.querySelector('#nama').value = nama;
+  // </script>
+
+  <script>
+  const urlParams = new URLSearchParams(window.location.search);
+  const nama = urlParams.get('n') || '';
+  const pronoun = urlParams.get('p') || 'Bapak/Ibu/Saudara/i';
+  const formattedName = `${pronoun} ${nama},`.replace(/ ,$/, ',');
+
+  // Ambil semua elemen yang cocok: .hero h4 span dan .home h4 span
+  const namaContainers = document.querySelectorAll('.hero h4 span, .home h4 span');
+
+  // Ubah isi teks semua elemen tersebut
+  namaContainers.forEach(container => {
+    container.innerText = formattedName;
+  });
+
+  // Isi input #nama jika ada
+  const inputNama = document.querySelector('#nama');
+  if (inputNama) {
+    inputNama.value = nama;
+  }
+</script>
+
+
+  
 
 
 
