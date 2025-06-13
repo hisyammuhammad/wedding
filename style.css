@@ -104,9 +104,10 @@ body {
   font-size: 3rem;
 }
 .home h6{
-  font-family: alex brush;
+  font-family: 'Courier New', Courier, monospace;
   color: var(--pink);
   font-size: 2rem;
+  font-weight: bold;
 }
 
 .gallery h2,
