@@ -28,16 +28,22 @@
   </head>
   <body>
 
-    <section id="hero" class="hero w-100 h-100 p-3 mx-auto text-center d-flex 
-    justify-content-center align-items-center text-white">
-      <main>
+<section id="hero" class="hero w-100 h-100 p-3 mx-auto text-center d-flex justify-content-center align-items-center">
+    <video autoplay loop muted playsinline class="video-background">
+        <source src="img/OPENING.mp4" type="video/mp4">
+        <source src="img/OPENING.webm" type="video/webm">
+        <source src="img/OPENING.ogv" type="video/ogg">
+        Your browser does not support the video tag.
+    </video>
+    <main class="main">
         <h4>Kepada <span>Bapak/Ibu/Saudara/i, </span></h4>
         <h1>Husna & Hendra</h1>
         <p>akan melangsungkan pernikahan dalam:</p>
         <div class="simply-countdown"></div>
         <a href="#home" class="btn btn-lg mt-4" onClick="enableScroll()">lihat undangan</a>
-      </main>
-    </section>
+    </main>
+</section>
+
 
 
     <nav class="navbar navbar-expand-md bg-tranparent sticky-top mynavbar">
@@ -272,13 +278,13 @@
             <div class="col-12">
               <div class="mb-3">
               <label for="jumlah" class="form-label">Jumlah</label>
-              <input type="number" class="form-control" id="jumlah" name="jumlah" min="0" max="4" length="1" value="0">
+              <input type="number" class="form-control" id="jumlah" name="jumlah" required min="1" max="4" length="1" value="0">
               </div>
               </div>
             <div class="col-12">
               <div class="mb-3">
               <label for="status" class="form-label">Konfirmasi</label>
-              <select name="status" id="status" class="form-select">
+              <select name="status" id="status" class="form-select" required>
                 <option selected>Pilih salah satu</option>
                 <option value="Hadir">Hadir</option>
                 <option value="Tidak hadir">Tidak hadir</option>
