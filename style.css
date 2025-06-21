@@ -164,7 +164,7 @@ body {
 
 .home h3 {
   /* font-weight: bold; */
-  font-family: 'pinyon script';
+  font-family: 'alex brush';
   font-size:1.8rem;
   color: var(--pink);
   margin-bottom: 1rem;
@@ -189,6 +189,22 @@ body {
 .home .heart i{
   margin: auto;
   color: var(--pink);
+}
+
+.card {
+         background-color: #808080; /* Latar belakang abu-abu */
+     }
+
+.card-body {
+    color: #8d481b; /* Change this to a suitable shade of brown */
+    background-color: #b4b4b4;
+    
+}
+/* Other existing styles */
+.card-header {
+    color: #8d481b; /* Optionally change the card header color as well */
+    background-color: #b1b1b1;
+    font-weight: bold;
 }
 
 .info {
@@ -236,7 +252,7 @@ body {
 }
 
 .gifts{
-  background-color: #6e5204;
+  background-color: #8d481b;
 }
 
 .gallery,
@@ -284,7 +300,7 @@ body {
 }
 
 .rsvp{
-  background-color: var(--bg);
+  background-color: #8d481b;
 }
 
 .rsvp p{
