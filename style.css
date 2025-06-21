@@ -1,7 +1,7 @@
 :root {
-  --pink: #aa650a;
+  --pink: #e2b67d;
   --bg: #0a0a0a;
-  --shadow: 0 2px 2px rgb(0 0 0/ 0.5);
+  --shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
      
 }
 
@@ -52,8 +52,11 @@ body {
 
 
 .hero h1, .hero h4, .hero p {
-  text-shadow: var(--shadow);
-  color: #0a0a0a;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8); /* Adding a darker shadow for better contrast */
+  color: #b38f4e;
+  background-color: rgba(97, 96, 96, 0.5); /* Semi-transparent background */
+  padding: 10px; /* Padding for better spacing */
+  border-radius: 5px; /* Rounded corners for aesthetics */
 }
 
 .hero h1 {
@@ -104,11 +107,13 @@ body {
 
 .home{
   background-image: url(img/bg.png);
-  background-size: cover;
+  background-size: auto;
+  background-position: center;
   min-height: 10vh;
   margin-top: -3rem;
   padding-top: 5rem;
   padding-bottom: 3rem;
+
 }
 
 .home h2{
@@ -145,9 +150,10 @@ body {
   margin-bottom: 1rem;
 } */
 
-.home p {
+.home p,
+.home h4 {
   font-size: 1.1rem;
-  color: #666;
+  color: #e7e297;
 }
 
 .home .couple {
@@ -189,6 +195,7 @@ body {
   
   background-image: url(img/bg.png);
   background-size: cover;
+  background-position: center;
   color: rgb(12, 11, 11);
   padding-top: 10rem;
   padding-bottom: 8rem;
@@ -226,6 +233,10 @@ body {
   border-top: 1px solid #999;
   font-size: 1rem;
   font-weight: 300;
+}
+
+.gifts{
+  background-color: #6e5204;
 }
 
 .gallery,
@@ -301,6 +312,22 @@ footer {
   background-color: var(--pink);
   color: white;
 }
+
+footer {
+    margin: 0;
+    padding: 0;
+    background-color: var(--pink); /* or your desired background color */
+    /* Ensure the footer stays at the bottom */
+    position: relative;
+}
+
+body {
+    margin: 0; /* Ensure there's no default margin on the body */
+    min-height: 100vh; /* Ensure body takes full height of viewport */
+    display: flex;
+    flex-direction: column;
+}
+
 
 footer a{
   color: var(--bg);
